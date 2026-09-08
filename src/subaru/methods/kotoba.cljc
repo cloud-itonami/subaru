@@ -22,7 +22,7 @@
   appends to a local file. G1: a connectivity-COMMONS map, NEVER a surveillance / targeting /
   military-C2 platform — no DPI / user-geolocation / ISR-targeting-relay attribute is emitted
   (none exists in the ontology; check-g1 enforces)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [clojure.java.io :as io])))
 
 (defn add [entity attr value] [":db/add" entity attr value])

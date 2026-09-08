@@ -12,7 +12,7 @@
     G8 — sourcing honesty. Representative engineering estimates.
 
   House style: ':…' keyword strings stay strings; pure fns; file I/O only at edges. Portable .cljc."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ── minimal EDN reader (subset) — mirrors link_budget.py faithfully.
 (def ^:private tok-re

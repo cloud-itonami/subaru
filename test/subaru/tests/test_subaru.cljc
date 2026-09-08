@@ -3,7 +3,7 @@
   1:1 Clojure port of tests/test_subaru.py."
   (:require [clojure.test :refer [deftest is run-tests]]
             [clojure.java.io :as io]
-            [clojure.string]
+            [kotoba.lang.text]
             [clojure.set]
             [subaru.methods.link-budget :as core]
             [subaru.methods.coverage :as coverage]
@@ -77,17 +77,17 @@
 (deftest test-datom-emit-ground-and-transient
   (let [{:keys [nodes edges]} (load-seed)
         out (datom/emit nodes edges 7)]
-    (is (clojure.string/includes? out ":add]"))
-    (is (clojure.string/includes? out ":entitlement/kind"))
-    (is (clojure.string/includes? out ":en/kind"))
-    (is (clojure.string/includes? out ":bond/is-transient true"))
-    (is (clojure.string/includes? out ":bond/ss-reach"))
+    (is (kotoba.lang.text/includes? out ":add]"))
+    (is (kotoba.lang.text/includes? out ":entitlement/kind"))
+    (is (kotoba.lang.text/includes? out ":en/kind"))
+    (is (kotoba.lang.text/includes? out ":bond/is-transient true"))
+    (is (kotoba.lang.text/includes? out ":bond/ss-reach"))
     (doseq [bad [":link/dpi" ":user/location" ":relay/targeting" ":subscription"]]
-      (is (not (clojure.string/includes? out bad)) (str "G1/G3 violation in datom log: " bad)))
-    (doseq [line (clojure.string/split-lines out)]
-      (when (and (clojure.string/starts-with? line "[") (clojure.string/includes? line ":bond/"))
-        (is (clojure.string/includes? line ":derived]") (str "derived not transient: " line))))
-    (is (clojure.string/includes? out " 7 :add]"))))
+      (is (not (kotoba.lang.text/includes? out bad)) (str "G1/G3 violation in datom log: " bad)))
+    (doseq [line (kotoba.lang.text/split-lines out)]
+      (when (and (kotoba.lang.text/starts-with? line "[") (kotoba.lang.text/includes? line ":bond/"))
+        (is (kotoba.lang.text/includes? line ":derived]") (str "derived not transient: " line))))
+    (is (kotoba.lang.text/includes? out " 7 :add]"))))
 
 (deftest test-determinism
   (let [{n1 :nodes e1 :edges} (load-seed)
