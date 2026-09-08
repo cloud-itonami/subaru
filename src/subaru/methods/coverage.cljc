@@ -4,7 +4,7 @@
 
   Reach = Σ incident :serves coverage-pct over service-areas that are :area/unconnected or
   :area/disaster — NOT a market map."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [subaru.methods.link-budget :as core]))
 
 (defn coverage [nodes edges]

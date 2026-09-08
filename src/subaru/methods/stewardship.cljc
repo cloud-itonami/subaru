@@ -4,7 +4,7 @@
 
   Every occupied :shell MUST carry a :disposes edge to a :disposal-plan (else throws). Checks
   darksat on the bus. Emits deorbit-debt as a hoshimori-consumable stewardship input."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [subaru.methods.link-budget :as core]))
 
 (defn stewardship [nodes edges]

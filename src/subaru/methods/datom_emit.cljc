@@ -5,7 +5,7 @@
   GROUND (durable, op :add) — node + 縁 datoms. DERIVED (transient, :bond/is-transient true) —
   coverage reach / min link margin / deorbit debt, computed on read (N1).
   G1: no DPI / user-location / targeting-relay attribute is emitted (none exists; check-g1 runs)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [subaru.methods.link-budget :as core]
             [subaru.methods.coverage :as coverage]
             [subaru.methods.stewardship :as stewardship]))
