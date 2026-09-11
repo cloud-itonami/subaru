@@ -1,5 +1,5 @@
 ;; subaru 昴 — constellation-ledger persistence + heartbeat tests.
-;; Run with `bb test`.
+;; Run with `kbb -M:test`.
 (ns subaru.tests.test-kotoba
   (:require [subaru.methods.kotoba :as k]
             [subaru.methods.autorun :as auto]

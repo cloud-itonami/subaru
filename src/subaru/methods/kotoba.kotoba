@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; subaru 昴 — constellation graph DATOM-LOG writer (content-addressed commit-DAG).
 (ns subaru.methods.kotoba
   "kotoba.cljc — subaru 昴 append-only CONSTELLATION LEDGER writer
