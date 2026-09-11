@@ -8,4 +8,4 @@
 - `wire/identity/` — externally served DID/profile JSON
 - `docs/` — ADR, live-operation runbook, and WASM design notes
 
-Run `bb test`. Live constellation operations remain Council and operator-DID gated.
+Run `kbb -M:test`. Live constellation operations remain Council and operator-DID gated.

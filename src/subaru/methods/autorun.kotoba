@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; subaru 昴 — autonomous heartbeat: load the constellation graph → append GROUND datoms.
 (ns subaru.methods.autorun
   "autorun.cljc — subaru 昴 deterministic heartbeat (ADR-2606162355, inochi/tate pattern).
