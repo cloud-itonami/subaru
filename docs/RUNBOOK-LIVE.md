@@ -3,7 +3,7 @@
 **ADR**: 2606162355 · **Status**: 🔴 R3 — gated, **no live action performed by this document**.
 
 This runbook is the **Council-attestation request** for subaru's two gated legs. Per the
-Bootstrap premise (root `CLAUDE.md`: *Council attestation = Pull Request review*), **merging the
+Bootstrap premise (root `AGENTS.md`: *Council attestation = Pull Request review*), **merging the
 PR that carries this runbook = Council attestation of the PROCEDURE below** — it does NOT
 authorize operating a live constellation. Constellation operation is its own on-chain-attested,
 spectrum-coordinated programme (G4/G6).
